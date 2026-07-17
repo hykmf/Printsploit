@@ -106,7 +106,6 @@ def find_process_pid(target_name):
     kernel32.CloseHandle(ctypes.c_void_p(snap))
     return pid
 
-
 RBX_PRINT   = 0
 RBX_INFO    = 1
 RBX_WARNING = 2
