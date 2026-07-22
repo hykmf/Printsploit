@@ -127,7 +127,7 @@ def build_shellcode(message, rbx_level):
     sc += b'\x33\xC9'
     sc += b'\x48\xB8' + struct.pack('<Q', gmha_addr)
     sc += b'\xFF\xD0'
-    sc += b'\x48\x05' + struct.pack('<I', 0x470C4E0) # replace 0x470C4E0 with updated print offset
+    sc += b'\x48\x05' + struct.pack('<I', 0x834D90) # replace 0x470C4E0 with updated print offset
     sc += b'\x49\x89\xC2'
     sc += b'\xB9' + struct.pack('<I', raw_level)
     sc += b'\x48\x8D\x15\x08\x00\x00\x00'
